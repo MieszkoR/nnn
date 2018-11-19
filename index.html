@@ -1,70 +1,11 @@
+<!DOCTYPE html>
+<html>
 <head>
-
-
-
-
-
-
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<link rel="stylesheet" href="style.css" type="text/css">
-
-
-
-
-
-
-<center>
-
-<p id="left"></p>
-
-
-
-<script>
- var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-var end=new Date('11/30/2018 11:59 AM');
-var timer;
-function show()
-{
-var now=new Date();
-var di=end-now;
-var da=Math.floor(di/_day);
-var h=Math.floor((di%_day)/_hour);
-var m=Math.floor((di%_hour)/_minute);
-var k=Math.floor((di%_minute)/_second);
-document.getElementById("left").innerHTML="time left: "+ da+" days "+h+" hours "+m+" minutes "+k+" seconds";
-var ht="time left: "+ da+" days "+h+" hours "+m+" minutes "+k+" seconds";
-
-return ht;
-}
- timer = setInterval(show, 1000);
-
-show();
-
-</script>
-
-
-
-<button type="button" onclick="show()" font-size= "16px">HELP ME!</button>
-</center>
-<script right:>
-function myFunction() {
-   document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
-
-
-
-
-
-
-
-<div class='Main'>
-
-
-
-
-</div>
+  <p id="countdown"></p>
+  <button type="button">HELP ME!</button>
+  <script async src="./index.js"></script>
 </body>
+</html>
